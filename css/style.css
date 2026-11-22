@@ -297,13 +297,14 @@ ul {
 }
 
 .brand-logo-full {
+  width: 144px;
   height: 38px;
-  width: auto;
   object-fit: contain;
   transition: var(--transition-smooth);
 }
 
 .site-header.scrolled .brand-logo-full {
+  width: 125px;
   height: 33px;
 }
 
@@ -1601,14 +1602,14 @@ textarea.form-control {
 }
 
 .footer-ce-logo {
+  width: 136px;
   height: 36px;
-  width: auto;
   object-fit: contain;
 }
 
 .footer-pro-logo {
+  width: 46px;
   height: 46px;
-  width: auto;
   object-fit: contain;
 }
 
@@ -1769,6 +1770,7 @@ textarea.form-control {
   }
 
   .brand-logo-full {
+    width: 121px;
     height: 32px;
   }
 
@@ -1786,6 +1788,7 @@ textarea.form-control {
   }
 
   .site-header.scrolled .brand-logo-full {
+    width: 106px;
     height: 28px;
   }
 
