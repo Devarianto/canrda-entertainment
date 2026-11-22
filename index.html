@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- =====================================================================
+       SEO DASAR & META TAGS
+       ===================================================================== -->
+  <title>PT Candra Entertainment — Melangkah Maju Bersama | Denpasar, Bali</title>
+  <meta
+    name="description"
+    content="PT Candra Entertainment adalah perusahaan hiburan di Denpasar, Bali dengan tagline Melangkah Maju Bersama. Menaungi Candra Production (rumah produksi musik pop Bali & layanan podcast), Candra EO, Candra Lens, dan event tahunan Candra Pro Idol Bali."
+  />
+  <meta
+    name="keywords"
+    content="PT Candra Entertainment, Candra Production, Candra EO, Candra Lens, Podcast Candra Production, Candra Pro Idol Bali, Musik Pop Bali, Denpasar Bali"
+  />
+  <meta name="author" content="PT Candra Entertainment" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0A0A0A" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:title" content="PT Candra Entertainment — Melangkah Maju Bersama" />
+  <meta
+    property="og:description"
+    content="Wadah generasi muda Bali untuk berkarya di bidang seni musik pop Bali, layanan podcast, event organizer, dokumentasi visual, dan ajang tahunan Candra Pro Idol Bali."
+  />
+  <meta property="og:image" content="assets/studio-podcast.jpg" />
+
+  <!-- Favicon Resmi PT Candra Entertainment -->
+  <link rel="icon" type="image/png" href="assets/logo-ce-icon-white.png" />
+
+  <!-- =====================================================================
+       GOOGLE FONTS: Montserrat (Heading Bold) & Inter (Body Text)
+       ===================================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- =====================================================================
+       STICKY NAVBAR
+       - Menggunakan logo vertikal 2 baris (Candra / Entertainment)
+       - Rapi & proporsional (tombol Hubungi Kami tidak mepet ke tepi)
+       - Efek blur, menciut/merapat, dan sudut melengkung saat di-scroll down
+       ===================================================================== -->
+  <header class="site-header" id="navbar">
+    <div class="nav-shell">
+      <div class="nav-container">
+        <a href="#hero" class="brand" aria-label="Beranda PT Candra Entertainment">
+          <img
+            src="assets/logo-ce-full-white.png"
+            alt="Candra Entertainment"
+            class="brand-logo-full"
+            width="168"
+            height="42"
+          />
+        </a>
+
+        <!-- Tombol Hamburger untuk Tablet & Mobile -->
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Buka Menu Navigasi"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+
+        <!-- Menu Navigasi -->
+        <nav class="nav-menu" id="navMenu" aria-label="Navigasi Utama">
+          <ul class="nav-list">
+            <li><a href="#hero" class="nav-link active">Beranda</a></li>
+            <li><a href="#tentang" class="nav-link">Tentang Kami</a></li>
+            <li><a href="#visi-misi" class="nav-link">Visi &amp; Misi</a></li>
+            <li><a href="#divisi" class="nav-link">Divisi</a></li>
+            <li><a href="#idol" class="nav-link">Candra Pro Idol</a></li>
+            <li><a href="#galeri" class="nav-link">Galeri Karya</a></li>
+            <li><a href="#kontak" class="nav-link nav-cta">Hubungi Kami</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================================================================
+         1. HERO SECTION
+         Judul: "PT Candra Entertainment" (Sejajar 1 baris)
+         Tagline: "Melangkah Maju Bersama"
+         Tombol: "Kenali Kami" dan "Hubungi Kami"
+         =================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-glow hero-glow--top" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow--bottom" aria-hidden="true"></div>
+      <div class="hero-pattern-overlay" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <div class="hero-content reveal">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>PERUSAHAAN HIBURAN, MUSIK &amp; KREATIF • DENPASAR, BALI</span>
+          </div>
+
+          <!-- Judul dibuat sejajar (1 baris pada layar desktop/tablet) -->
+          <h1 class="hero-title hero-title--inline">
+            PT Candra <span class="text-gold">Entertainment</span>
+          </h1>
+
+          <p class="hero-tagline">&ldquo;Melangkah Maju Bersama&rdquo;</p>
+
+          <div class="gold-divider gold-divider--center" aria-hidden="true"></div>
+
+          <p class="hero-description">
+            Wadah generasi muda Bali untuk berkarya, berinovasi, dan melestarikan
+            kekayaan budaya Bali melalui karya musik, layanan podcast kreatif,
+            penyelenggaraan acara profesional, serta dokumentasi visual berkelas.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#tentang" class="btn btn-primary">
+              <span>Kenali Kami</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+            <a href="#kontak" class="btn btn-outline">
+              <span>Hubungi Kami</span>
+            </a>
+          </div>
+
+          <!-- Ringkasan Pilar Singkat -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-value">30 Maret 2023</span>
+              <span class="stat-label">Berdiri di Denpasar, Bali</span>
+            </div>
+            <div class="stat-separator" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-value">3 Divisi Utama</span>
+              <span class="stat-label">Candra Production • EO • Lens</span>
+            </div>
+            <div class="stat-separator" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-value">Candra Pro Idol Bali</span>
+              <span class="stat-label">Ajang Pencarian Bakat Tahunan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         2. TENTANG KAMI
+         Kolom kiri menampilkan video YouTube "Melangkah Maju Bersama"
+         =================================================================== -->
+    <section class="section about-section" id="tentang">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Kolom Visual: Embed Video YouTube "Melangkah Maju Bersama" -->
+          <div class="about-media reveal">
+            <div class="media-frame media-frame--video">
+              <div class="about-video-wrap">
+                <iframe
+                  src="https://www.youtube.com/embed/e_oAk7CxC3o"
+                  title="Candra Pro Artis - MELANGKAH MAJU BERSAMA (Official Music Video)"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="about-video-caption">
+                <img
+                  src="assets/logo-candra-production.png"
+                  alt="Logo Candra Production"
+                  class="floating-logo"
+                />
+                <div class="about-video-meta">
+                  <span class="floating-year">Candra Pro Artis — Melangkah Maju Bersama</span>
+                  <span class="floating-caption">Didirikan 30 Maret 2023 • Denpasar, Bali</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kolom Teks Tentang Kami -->
+          <div class="about-content reveal">
+            <span class="section-eyebrow">TENTANG KAMI</span>
+            <h2 class="section-title">
+              Rumah Kreatif Generasi Muda <span class="text-gold">Bali</span>
+            </h2>
+            <div class="gold-divider" aria-hidden="true"></div>
+
+            <p class="about-lead">
+              <strong>Candra Production</strong> berdiri pada <strong>30 Maret 2023</strong> di
+              <strong>Denpasar, Bali</strong> di bawah naungan
+              <strong>PT Candra Entertainment</strong>.
+            </p>
+
+            <p class="about-text">
+              Kami hadir sebagai wadah generasi muda Bali untuk berkarya, khususnya di bidang
+              seni musik, dan telah melahirkan beberapa penyanyi pop Bali yang karya-karyanya
+              dirilis secara luas lewat kanal YouTube resmi
+              <strong>&ldquo;Candra Production&rdquo; (@Candraproduction16)</strong>.
+            </p>
+
+            <p class="about-text">
+              Selain produksi musik pop Bali, <strong>Candra Production</strong> juga menghadirkan
+              layanan <strong>Studio Podcast</strong> melalui program
+              <strong>BBS (Bincang-Bincang Santai)</strong> sebagai ruang diskusi inspiratif
+              bagi para musisi, seniman, dan pelaku kreatif di Bali.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-box">
+                <div class="highlight-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 18V5l12-2v13"></path>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <circle cx="18" cy="16" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="highlight-title">Musik Pop Bali &amp; Podcast Kreatif</h3>
+                  <p class="highlight-desc">
+                    Melahirkan karya lagu pop Bali orisinal, karaoke resmi, serta tayangan
+                    podcast berkualitas dari studio kami di Denpasar.
+                  </p>
+                </div>
+              </div>
+
+              <div class="highlight-box">
+                <div class="highlight-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path>
+                    <path d="m10 15 5-3-5-3z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="highlight-title">Kanal Resmi &ldquo;Candra Production&rdquo;</h3>
+                  <p class="highlight-desc">
+                    Tersedia di YouTube <strong>@Candraproduction16</strong>, Instagram
+                    <strong>@candraproduction</strong>, dan Facebook untuk menjangkau pecinta musik Bali di mana pun berada.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         3. VISI & MISI (Dua Kartu Berdampingan)
+         =================================================================== -->
+    <section class="section vm-section" id="visi-misi">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-eyebrow">ARAH &amp; TUJUAN KAMI</span>
+          <h2 class="section-title">Visi &amp; <span class="text-gold">Misi</span></h2>
+          <div class="gold-divider gold-divider--center" aria-hidden="true"></div>
+          <p class="section-subtitle">
+            Komitmen PT Candra Entertainment dalam memajukan potensi generasi muda
+            dan membawa musik serta budaya Bali ke panggung nasional hingga mancanegara.
+          </p>
+        </div>
+
+        <div class="vm-grid">
+          <!-- Kartu Visi -->
+          <article class="vm-card reveal">
+            <div class="vm-card-header">
+              <div class="vm-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <span class="vm-label">01 / VISI PERUSAHAAN</span>
+                <h3 class="vm-title">Visi Kami</h3>
+              </div>
+            </div>
+            <div class="gold-divider" aria-hidden="true"></div>
+            <p class="vm-body">
+              Menjadi wadah sekaligus rumah bagi masyarakat Bali yang ingin berkarya,
+              serta memajukan dan melestarikan budaya Bali melalui musik hingga bisa
+              menasional bahkan mendunia.
+            </p>
+          </article>
+
+          <!-- Kartu Misi -->
+          <article class="vm-card reveal">
+            <div class="vm-card-header">
+              <div class="vm-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+              </div>
+              <div>
+                <span class="vm-label">02 / MISI PERUSAHAAN</span>
+                <h3 class="vm-title">Misi Kami</h3>
+              </div>
+            </div>
+            <div class="gold-divider" aria-hidden="true"></div>
+            <p class="vm-body">
+              Membentuk penyanyi baru untuk memperkenalkan musik Bali sampai mancanegara,
+              dan menggelar event <strong>&ldquo;CANDRA PRO IDOL BALI&rdquo;</strong> untuk
+              mencari bakat muda Bali yang dibina menjadi artis profesional dari segi
+              <strong>suara</strong>, <strong>penampilan</strong>, dan <strong>attitude</strong>,
+              sehingga menjadi wajah budaya dan adat istiadat Bali.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         4. DIVISI KAMI (3 Kartu Utama — Layanan Podcast termasuk di Candra Production)
+         - Candra Production: rumah produksi musik & layanan podcast
+         - Candra EO: event organizer
+         - Candra Lens: jasa foto dan video
+         =================================================================== -->
+    <section class="section division-section" id="divisi">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-eyebrow">EKOSISTEM KREATIF</span>
+          <h2 class="section-title">Divisi <span class="text-gold">Kami</span></h2>
+          <div class="gold-divider gold-divider--center" aria-hidden="true"></div>
+          <p class="section-subtitle">
+            Tiga pilar divisi utama di bawah PT Candra Entertainment untuk
+            mewujudkan karya musik &amp; podcast, pertunjukan panggung, dan produksi visual terbaik.
+          </p>
+        </div>
+
+        <div class="division-grid">
+          <!-- Divisi 1: Candra Production (Termasuk Layanan Podcast) -->
+          <article class="division-card reveal">
+            <div class="division-number">01</div>
+            <div class="division-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                <line x1="12" x2="12" y1="19" y2="22"></line>
+              </svg>
+            </div>
+            <span class="division-category">RUMAH PRODUKSI MUSIK &amp; PODCAST</span>
+            <h3 class="division-title">Candra Production</h3>
+            <p class="division-desc">
+              Rumah produksi musik profesional yang menangani rekaman lagu pop Bali,
+              aransemen, mixing-mastering, dan rilis kanal resmi, sekaligus menyediakan
+              <strong>Layanan Studio Podcast (Program BBS — Bincang-Bincang Santai)</strong>.
+            </p>
+            <ul class="division-list">
+              <li>Produksi &amp; Rekaman Musik Pop Bali</li>
+              <li>Layanan Studio Podcast &amp; Program BBS</li>
+              <li>Manajemen Artis &amp; Rilis Kanal YouTube Resmi</li>
+            </ul>
+          </article>
+
+          <!-- Divisi 2: Candra EO -->
+          <article class="division-card reveal">
+            <div class="division-number">02</div>
+            <div class="division-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <span class="division-category">EVENT ORGANIZER</span>
+            <h3 class="division-title">Candra EO</h3>
+            <p class="division-desc">
+              Event organizer kreatif yang merancang dan mengeksekusi berbagai acara
+              hiburan, konser musik, kompetisi pencarian bakat tahunan
+              <em>Candra Pro Idol Bali</em>, pergelaran budaya, hingga acara korporat.
+            </p>
+            <ul class="division-list">
+              <li>Konser Musik &amp; Festival Budaya Bali</li>
+              <li>Penyelenggaraan Event &amp; Audisi Bakat</li>
+              <li>Manajemen Panggung, Sound &amp; Talent</li>
+            </ul>
+          </article>
+
+          <!-- Divisi 3: Candra Lens -->
+          <article class="division-card reveal">
+            <div class="division-number">03</div>
+            <div class="division-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path>
+                <circle cx="12" cy="13" r="3"></circle>
+              </svg>
+            </div>
+            <span class="division-category">JASA FOTO DAN VIDEO</span>
+            <h3 class="division-title">Candra Lens</h3>
+            <p class="division-desc">
+              Divisi produksi visual, fotografi, dan sinematografi. Menghadirkan kualitas
+              gambar tajam untuk pembuatan video klip musik (Official MV), dokumentasi
+              event, hingga konten visual kreatif.
+            </p>
+            <ul class="division-list">
+              <li>Pembuatan Video Klip Musik (Official MV)</li>
+              <li>Dokumentasi Foto &amp; Video Event</li>
+              <li>Fotografi Profil Artis &amp; Komersial</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Highlight Fasilitas Candra Production: Studio Podcast -->
+        <div class="podcast-banner reveal">
+          <div class="podcast-banner-media">
+            <img
+              src="assets/studio-podcast.jpg"
+              alt="Studio Podcast Candra Production di Denpasar, Bali"
+              loading="lazy"
+            />
+          </div>
+          <div class="podcast-banner-info">
+            <span class="section-eyebrow">FASILITAS &amp; LAYANAN CANDRA PRODUCTION</span>
+            <h3 class="podcast-banner-title">
+              Layanan Podcast <span class="text-gold">Candra Production</span>
+            </h3>
+            <p class="podcast-banner-desc">
+              Bagian dari layanan kreatif <strong>Candra Production</strong> yang menghadirkan
+              fasilitas studio podcast berdesain akustik modern di Denpasar. Rumah bagi program
+              <strong>BBS (Bincang-Bincang Santai)</strong> serta terbuka untuk kolaborasi
+              talkshow dan produksi konten siniar profesional.
+            </p>
+            <div class="podcast-banner-actions">
+              <a
+                href="https://wa.me/6281336756838?text=Halo%20Candra%20Production,%20saya%20ingin%20bertanya%20mengenai%20Layanan%20Podcast%20Candra%20Production."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary"
+              >
+                <span>Info &amp; Booking Podcast</span>
+              </a>
+              <a
+                href="https://www.youtube.com/watch?v=oFnBPcnHgDk"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline"
+              >
+                <span>Tonton Podcast BBS</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         5. CANDRA PRO IDOL BALI
+         - Informasi umum event rutin tahunan
+         - Bagian kanan dilengkapi Slideshow Foto Instagram Resmi:
+           1. Audisi: https://www.instagram.com/p/DZjfAKeEwCB/
+           2. Konser Artis Candra Pro: https://www.instagram.com/p/DK-DEjDTMi_/
+           3. Juara Lomba: https://www.instagram.com/p/DK9-gjtzTkD/
+         =================================================================== -->
+    <section class="section idol-section" id="idol">
+      <div class="container">
+        <div class="idol-wrapper reveal">
+          <!-- Kolom Kiri: Informasi Umum Event Rutin Tahunan Candra Pro Idol Bali -->
+          <div class="idol-content">
+            <div class="idol-badge">
+              <span>EVENT RUTIN TAHUNAN • AJANG PENCARIAN BAKAT</span>
+            </div>
+            <h2 class="idol-title">
+              CANDRA PRO <span class="text-gold">IDOL BALI</span>
+            </h2>
+            <div class="gold-divider" aria-hidden="true"></div>
+
+            <p class="idol-description">
+              <strong>Candra Pro Idol Bali</strong> adalah ajang pencarian bakat menyanyi
+              rutin tahunan persembahan <strong>PT Candra Entertainment</strong> yang
+              didedikasikan untuk menemukan, mengasah, dan mengorbitkan talenta muda terbaik
+              di Bali menjadi penyanyi profesional.
+            </p>
+
+            <p class="idol-description">
+              Melalui rangkaian seleksi audisi, masa pembinaan intensif, hingga malam puncak
+              konser, setiap talenta dipersiapkan secara matang agar mampu berkarya di
+              industri musik sekaligus menjadi <strong>wajah budaya dan adat istiadat Bali</strong>.
+            </p>
+
+            <!-- 3 Pilar Pembinaan -->
+            <div class="idol-pillars">
+              <div class="pillar-item">
+                <span class="pillar-num">01</span>
+                <div>
+                  <h3 class="pillar-name">Kualitas Suara (Vocal)</h3>
+                  <p class="pillar-text">Pembinaan teknik olah vokal, penghayatan lagu pop Bali, dan karakter suara di panggung maupun studio rekaman.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <span class="pillar-num">02</span>
+                <div>
+                  <h3 class="pillar-name">Penampilan (Performance)</h3>
+                  <p class="pillar-text">Penguasaan panggung konser, ekspresi artistik, serta busana yang merepresentasikan keanggunan budaya Bali.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <span class="pillar-num">03</span>
+                <div>
+                  <h3 class="pillar-name">Attitude (Etika &amp; Budaya)</h3>
+                  <p class="pillar-text">Pembentukan karakter, kedisiplinan, dan etika profesional yang menjunjung tinggi adat istiadat Bali.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="idol-cta">
+              <a
+                href="https://wa.me/6281336756838?text=Halo%20PT%20Candra%20Entertainment,%20saya%20ingin%20bertanya%20mengenai%20informasi%20Candra%20Pro%20Idol%20Bali."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary"
+              >
+                <span>Hubungi Kami untuk Informasi Event</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Kolom Kanan: Slideshow Foto Audisi, Konser, & Juara dari Instagram Resmi -->
+          <div class="idol-media">
+            <div class="idol-slideshow" id="idolSlideshow" aria-label="Galeri Slideshow Candra Pro Idol Bali">
+              <div class="slides-viewport">
+                <!-- Slide 1: Audisi (https://www.instagram.com/p/DZjfAKeEwCB/) -->
+                <div class="idol-slide active" data-index="0">
+                  <div class="idol-slide-media">
+                    <img
+                      src="assets/ig-idol-audisi.jpg"
+                      alt="Audisi Candra Pro Idol Bali"
+                      class="idol-slide-img"
+                    />
+                    <a
+                      href="https://www.instagram.com/p/DZjfAKeEwCB/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="slide-ig-pill"
+                      title="Lihat Postingan di Instagram @candraproduction"
+                    >
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                      </svg>
+                      <span>Lihat di Instagram</span>
+                    </a>
+                  </div>
+                  <div class="idol-slide-caption">
+                    <div>
+                      <span class="slide-badge">01 • DOKUMENTASI AUDISI</span>
+                      <h4 class="slide-title">Audisi &amp; Penjurian Candra Pro Idol Bali</h4>
+                    </div>
+                    <a
+                      href="https://www.instagram.com/p/DZjfAKeEwCB/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="slide-count"
+                    >
+                      IG Post &#8599;
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Slide 2: Konser Artis Candra Pro (https://www.instagram.com/p/DK-DEjDTMi_/) -->
+                <div class="idol-slide" data-index="1">
+                  <div class="idol-slide-media">
+                    <img
+                      src="assets/ig-idol-konser.jpg"
+                      alt="Konser Artis Candra Pro di Panggung Candra Pro Idol Bali"
+                      class="idol-slide-img"
+                    />
+                    <a
+                      href="https://www.instagram.com/p/DK-DEjDTMi_/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="slide-ig-pill"
+                      title="Lihat Postingan di Instagram @candraproduction"
+                    >
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                      </svg>
+                      <span>Lihat di Instagram</span>
+                    </a>
+                  </div>
+                  <div class="idol-slide-caption">
+                    <div>
+                      <span class="slide-badge">02 • KONSER ARTIS CANDRA PRO</span>
+                      <h4 class="slide-title">Penampilan Panggung Konser Artis Candra Pro</h4>
+                    </div>
+                    <a
+                      href="https://www.instagram.com/p/DK-DEjDTMi_/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="slide-count"
+                    >
+                      IG Post &#8599;
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Slide 3: Juara Lomba (https://www.instagram.com/p/DK9-gjtzTkD/) -->
+                <div class="idol-slide" data-index="2">
+                  <div class="idol-slide-media">
+                    <img
+                      src="assets/ig-idol-juara.jpg"
+                      alt="Pemenang dan Juara Lomba Candra Pro Idol Bali"
+                      class="idol-slide-img"
+                    />
+                    <a
+                      href="https://www.instagram.com/p/DK9-gjtzTkD/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="slide-ig-pill"
+                      title="Lihat Postingan di Instagram @candraproduction"
+                    >
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                      </svg>
+                      <span>Lihat di Instagram</span>
+                    </a>
+                  </div>
+                  <div class="idol-slide-caption">
+                    <div>
+                      <span class="slide-badge">03 • JUARA CANDRA PRO IDOL</span>
+                      <h4 class="slide-title">Penobatan &amp; Apresiasi Juara Lomba</h4>
+                    </div>
+                    <a
+                      href="https://www.instagram.com/p/DK9-gjtzTkD/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="slide-count"
+                    >
+                      IG Post &#8599;
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Tombol Navigasi Prev / Next Slideshow -->
+                <button
+                  type="button"
+                  class="slide-nav slide-nav--prev"
+                  id="idolPrevBtn"
+                  aria-label="Foto Sebelumnya"
+                >
+                  &#10094;
+                </button>
+                <button
+                  type="button"
+                  class="slide-nav slide-nav--next"
+                  id="idolNextBtn"
+                  aria-label="Foto Selanjutnya"
+                >
+                  &#10095;
+                </button>
+              </div>
+
+              <!-- Indikator Titik (Dots) Slideshow -->
+              <div class="slide-dots" id="idolSlideDots" role="tablist" aria-label="Pilih Slide Foto">
+                <button type="button" class="slide-dot active" data-slide="0" aria-label="Slide 1: Foto Audisi"></button>
+                <button type="button" class="slide-dot" data-slide="1" aria-label="Slide 2: Konser Artis Candra Pro"></button>
+                <button type="button" class="slide-dot" data-slide="2" aria-label="Slide 3: Juara Lomba"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         6. GALERI KARYA (Embed YouTube Resmi @Candraproduction16 & Instagram)
+         =================================================================== -->
+    <section class="section gallery-section" id="galeri">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-eyebrow">GALERI VIDEO &amp; MEDIA SOSIAL</span>
+          <h2 class="section-title">Galeri <span class="text-gold">Karya Resmi</span></h2>
+          <div class="gold-divider gold-divider--center" aria-hidden="true"></div>
+          <p class="section-subtitle">
+            Tonton langsung karya video klip musik pop Bali, penyanyi jebolan Candra Pro Idol,
+            dan episode Podcast BBS dari kanal YouTube resmi
+            <a href="https://www.youtube.com/@Candraproduction16" target="_blank" rel="noopener noreferrer" class="text-gold">@Candraproduction16</a>
+            serta Instagram
+            <a href="https://www.instagram.com/candraproduction/" target="_blank" rel="noopener noreferrer" class="text-gold">@candraproduction</a>.
+          </p>
+        </div>
+
+        <!-- Filter Kategori Galeri -->
+        <div class="gallery-filters reveal" role="tablist" aria-label="Filter Kategori Galeri">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Semua Karya</button>
+          <button class="filter-btn" data-filter="mv" role="tab" aria-selected="false">Music Video Pop Bali</button>
+          <button class="filter-btn" data-filter="idol" role="tab" aria-selected="false">Karya Candra Pro Idol</button>
+          <button class="filter-btn" data-filter="podcast" role="tab" aria-selected="false">Podcast BBS</button>
+        </div>
+
+        <!-- Grid Embed YouTube Karya Candra Production -->
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Karya 1: Dayung Sampan - Ngurah Panji ft Gek Ratih -->
+          <article class="video-card gallery-item reveal" data-category="mv">
+            <div class="video-embed-wrap">
+              <iframe
+                src="https://www.youtube.com/embed/8mkUubJct2s"
+                title="DAYUNG SAMPAN - NGURAH PANJI FT GEK RATIH (Official Music Video)"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-card-body">
+              <span class="gallery-tag">Official Music Video</span>
+              <h3 class="video-card-title">Ngurah Panji ft. Gek Ratih — Dayung Sampan</h3>
+              <p class="video-card-desc">
+                Single kolaborasi pop Bali produksi Candra Production dengan video klip sinematik oleh Candra Lens.
+              </p>
+            </div>
+          </article>
+
+          <!-- Karya 2: Surya Pandi - Ajahin Ngengsapang (#candraproidol) -->
+          <article class="video-card gallery-item reveal" data-category="idol">
+            <div class="video-embed-wrap">
+              <iframe
+                src="https://www.youtube.com/embed/FmKJbpy78ss"
+                title="SURYA PANDI - AJAHIN NGENGSAPANG (Official Music Video)"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-card-body">
+              <span class="gallery-tag">Candra Pro Idol Talent</span>
+              <h3 class="video-card-title">Surya Pandi — Ajahin Ngengsapang</h3>
+              <p class="video-card-desc">
+                Karya penyanyi muda jebolan pembinaan Candra Pro Idol Bali yang dirilis resmi di kanal Candra Production.
+              </p>
+            </div>
+          </article>
+
+          <!-- Karya 3: Gek Mekar - Harapan Dadi Debu (#candraproidol) -->
+          <article class="video-card gallery-item reveal" data-category="idol">
+            <div class="video-embed-wrap">
+              <iframe
+                src="https://www.youtube.com/embed/klWiTqnKzjk"
+                title="GEK MEKAR - HARAPAN DADI DEBU (Official Music Video)"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-card-body">
+              <span class="gallery-tag">Candra Pro Idol Talent</span>
+              <h3 class="video-card-title">Gek Mekar — Harapan Dadi Debu</h3>
+              <p class="video-card-desc">
+                Wujud nyata misi Candra Production dalam mengorbitkan talenta vokal muda Bali ke industri musik profesional.
+              </p>
+            </div>
+          </article>
+
+          <!-- Karya 4: Bali Dipta - Takut Nekedang (#candraproidol) -->
+          <article class="video-card gallery-item reveal" data-category="idol">
+            <div class="video-embed-wrap">
+              <iframe
+                src="https://www.youtube.com/embed/7mulenw7WxU"
+                title="BALI DIPTA - TAKUT NEKEDANG (Official Music Video)"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-card-body">
+              <span class="gallery-tag">Candra Pro Idol Talent</span>
+              <h3 class="video-card-title">Bali Dipta — Takut Nekedang</h3>
+              <p class="video-card-desc">
+                Single pop Bali dari talenta muda Candra Pro Idol Bali yang diproduksi dan dirilis oleh Candra Production.
+              </p>
+            </div>
+          </article>
+
+          <!-- Karya 5: May Jayantha ft Made Pawana - Care Sing Menyali -->
+          <article class="video-card gallery-item reveal" data-category="mv">
+            <div class="video-embed-wrap">
+              <iframe
+                src="https://www.youtube.com/embed/LuqTWf039TI"
+                title="MAY JAYANTHA FT MADE PAWANA - CARE SING MENYALI (Official Music Video)"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-card-body">
+              <span class="gallery-tag">Official Music Video</span>
+              <h3 class="video-card-title">May Jayantha ft. Made Pawana — Care Sing Menyali</h3>
+              <p class="video-card-desc">
+                Karya musik pop Bali populer dengan aransemen modern yang melestarikan bahasa dan budaya Bali.
+              </p>
+            </div>
+          </article>
+
+          <!-- Karya 6: Podcast BBS Eps 3 -->
+          <article class="video-card gallery-item reveal" data-category="podcast">
+            <div class="video-embed-wrap">
+              <iframe
+                src="https://www.youtube.com/embed/oFnBPcnHgDk"
+                title="BBS - Podcast Candra Production Eps 3"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-card-body">
+              <span class="gallery-tag">Podcast Candra Pro</span>
+              <h3 class="video-card-title">BBS (Bincang-Bincang Santai) — Episode 3</h3>
+              <p class="video-card-desc">
+                Obrolan santai dan inspiratif bersama pelaku seni di Studio Podcast Candra Production Denpasar.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Strip Kanal YouTube, Instagram & Facebook -->
+        <div class="social-embed-strip reveal">
+          <div class="social-strip-info">
+            <h3 class="social-strip-title">
+              Ikuti Rilisan Terbaru di <span class="text-gold">YouTube, Instagram &amp; Facebook</span>
+            </h3>
+            <p class="social-strip-desc">
+              Jangan lewatkan video klip terbaru, cuplikan Reels Candra Pro Idol Bali,
+              serta tayangan Podcast BBS di akun sosial media resmi kami.
+            </p>
+          </div>
+          <div class="social-strip-buttons">
+            <a
+              href="https://www.youtube.com/@Candraproduction16"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path>
+                <path d="m10 15 5-3-5-3z"></path>
+              </svg>
+              <span>YouTube @Candraproduction16</span>
+            </a>
+            <a
+              href="https://www.instagram.com/candraproduction/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+              </svg>
+              <span>Instagram @candraproduction</span>
+            </a>
+            <a
+              href="https://www.facebook.com/search/top?q=Candra%20Production"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+              <span>Facebook Candra Production</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         7. KONTAK
+         Alamat: Jalan Gurita No.26A, Denpasar Selatan, Bali
+         Telepon/WA: 0813-3675-6838
+         Email: candraentertainmentofficial@gmail.com
+         Form sederhana: Nama, Email, Pesan + Tombol WhatsApp
+         =================================================================== -->
+    <section class="section contact-section" id="kontak">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-eyebrow">TERHUBUNG DENGAN KAMI</span>
+          <h2 class="section-title">Hubungi <span class="text-gold">Kami</span></h2>
+          <div class="gold-divider gold-divider--center" aria-hidden="true"></div>
+          <p class="section-subtitle">
+            Siap berkolaborasi dalam produksi musik, layanan podcast, penyelenggaraan
+            event, jasa foto/video, atau informasi Candra Pro Idol Bali? Mari melangkah maju bersama.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Kolom Info Kontak & Tombol WhatsApp -->
+          <div class="contact-info reveal">
+            <h3 class="contact-heading">Kantor &amp; Studio Kami</h3>
+            <p class="contact-intro">
+              Kunjungi langsung studio rekaman dan podcast kami di Denpasar Selatan
+              atau hubungi tim manajemen PT Candra Entertainment melalui WhatsApp.
+            </p>
+
+            <div class="contact-cards">
+              <!-- Alamat -->
+              <div class="info-item">
+                <div class="info-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="info-title">Alamat Studio &amp; Kantor</h4>
+                  <p class="info-detail">Jalan Gurita No.26A, Denpasar Selatan, Bali</p>
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Jalan+Gurita+No.26A,+Denpasar+Selatan,+Bali"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="info-link"
+                  >
+                    Lihat di Google Maps &rarr;
+                  </a>
+                </div>
+              </div>
+
+              <!-- Nomor Telepon / WhatsApp -->
+              <div class="info-item">
+                <div class="info-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="info-title">Telepon &amp; WhatsApp Resmi</h4>
+                  <p class="info-detail">
+                    <strong>0813-3675-6838</strong>
+                  </p>
+                  <a
+                    href="tel:+6281336756838"
+                    class="info-link"
+                  >
+                    Hubungi Sekarang &rarr;
+                  </a>
+                </div>
+              </div>
+
+              <!-- Email & Kanal Resmi -->
+              <div class="info-item">
+                <div class="info-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="info-title">Email &amp; Media Sosial Resmi</h4>
+                  <p class="info-detail">candraentertainmentofficial@gmail.com</p>
+                  <div class="info-sublinks">
+                    <a href="mailto:candraentertainmentofficial@gmail.com" class="info-link">Kirim Email &rarr;</a>
+                    <span class="text-muted">•</span>
+                    <a href="https://www.youtube.com/@Candraproduction16" target="_blank" rel="noopener noreferrer" class="info-link">YouTube</a>
+                    <span class="text-muted">•</span>
+                    <a href="https://www.instagram.com/candraproduction/" target="_blank" rel="noopener noreferrer" class="info-link">Instagram</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tombol WhatsApp Langsung (081336756838) -->
+            <div class="whatsapp-box">
+              <p class="whatsapp-note">Ingin konsultasi cepat via chat WhatsApp (0813-3675-6838)?</p>
+              <a
+                href="https://wa.me/6281336756838?text=Halo%20PT%20Candra%20Entertainment,%20saya%20ingin%20bertanya%20mengenai%20layanan%20dan%20program%20Anda."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-whatsapp"
+                id="whatsappDirectBtn"
+              >
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"></path>
+                  <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"></path>
+                </svg>
+                <span>Chat WhatsApp (0813-3675-6838)</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Kolom Formulir Kontak Sederhana (Nama, Email, Pesan) -->
+          <div class="contact-form-wrapper reveal">
+            <form class="contact-form" id="contactForm" novalidate>
+              <h3 class="form-title">Kirim Pesan</h3>
+              <p class="form-subtitle">
+                Isi formulir di bawah ini untuk terhubung langsung dengan tim PT Candra Entertainment.
+              </p>
+
+              <div class="form-group">
+                <label for="nama" class="form-label">Nama Lengkap <span class="text-gold">*</span></label>
+                <input
+                  type="text"
+                  id="nama"
+                  name="nama"
+                  class="form-control"
+                  placeholder="Masukkan nama lengkap Anda"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Alamat Email <span class="text-gold">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="nama@email.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="pesan" class="form-label">Pesan / Keperluan <span class="text-gold">*</span></label>
+                <textarea
+                  id="pesan"
+                  name="pesan"
+                  rows="4"
+                  class="form-control"
+                  placeholder="Tuliskan pesan, rencana produksi musik/podcast, kolaborasi event, atau pertanyaan Anda..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Kirim Pesan ke WhatsApp Resmi</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <!-- Pesan Status Umpan Balik Form -->
+              <div class="form-feedback" id="formFeedback" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =====================================================================
+       8. FOOTER
+       Logo, tautan cepat, ikon sosial media (YouTube, Instagram, Facebook), copyright 2026
+       ===================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand & Tagline -->
+        <div class="footer-brand">
+          <div class="footer-logos">
+            <img
+              src="assets/logo-ce-full-white.png"
+              alt="Logo PT Candra Entertainment"
+              class="footer-ce-logo"
+            />
+            <img
+              src="assets/logo-candra-production.png"
+              alt="Logo Candra Production"
+              class="footer-pro-logo"
+            />
+          </div>
+          <p class="footer-desc">
+            Perusahaan hiburan, rumah produksi musik pop Bali &amp; layanan podcast,
+            event organizer, serta produksi foto &amp; video profesional di Denpasar, Bali.
+          </p>
+          <p class="footer-address">
+            Jalan Gurita No.26A, Denpasar Selatan, Bali
+          </p>
+          <p class="footer-contact-line">
+            Telp/WA: <a href="https://wa.me/6281336756838">0813-3675-6838</a> | Email: <a href="mailto:candraentertainmentofficial@gmail.com">candraentertainmentofficial@gmail.com</a>
+          </p>
+        </div>
+
+        <!-- Tautan Cepat -->
+        <div class="footer-links">
+          <h4 class="footer-heading">Tautan Cepat</h4>
+          <ul>
+            <li><a href="#hero">Beranda</a></li>
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#visi-misi">Visi &amp; Misi</a></li>
+            <li><a href="#divisi">Divisi Kami</a></li>
+            <li><a href="#idol">Candra Pro Idol Bali</a></li>
+            <li><a href="#galeri">Galeri Karya</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </div>
+
+        <!-- Divisi Perusahaan -->
+        <div class="footer-links">
+          <h4 class="footer-heading">Divisi &amp; Program</h4>
+          <ul>
+            <li><a href="#divisi">Candra Production (Musik &amp; Podcast)</a></li>
+            <li><a href="#divisi">Candra EO</a></li>
+            <li><a href="#divisi">Candra Lens</a></li>
+            <li><a href="#idol">Candra Pro Idol Bali</a></li>
+          </ul>
+        </div>
+
+        <!-- Sosial Media (YouTube, Instagram, Facebook) -->
+        <div class="footer-social">
+          <h4 class="footer-heading">Sosial Media Resmi</h4>
+          <p class="footer-social-text">
+            Ikuti kanal resmi kami untuk rilisan musik pop Bali terbaru, podcast BBS, dan informasi Candra Pro Idol Bali.
+          </p>
+          <div class="social-icons">
+            <!-- YouTube Resmi: @Candraproduction16 -->
+            <a
+              href="https://www.youtube.com/@Candraproduction16"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+              aria-label="YouTube Resmi Candra Production"
+              title="YouTube: @Candraproduction16"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path>
+                <path d="m10 15 5-3-5-3z"></path>
+              </svg>
+              <span>YouTube</span>
+            </a>
+
+            <!-- Instagram Resmi: @candraproduction -->
+            <a
+              href="https://www.instagram.com/candraproduction/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+              aria-label="Instagram Resmi Candra Production"
+              title="Instagram: @candraproduction"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+              </svg>
+              <span>Instagram</span>
+            </a>
+
+            <!-- Facebook Resmi: Candra Production -->
+            <a
+              href="https://www.facebook.com/search/top?q=Candra%20Production"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+              aria-label="Facebook Resmi Candra Production"
+              title="Facebook: Candra Production"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+              <span>Facebook</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2026 <strong>PT Candra Entertainment</strong>. All Rights Reserved.
+        </p>
+        <p class="footer-tagline">
+          &ldquo;Melangkah Maju Bersama&rdquo; • Denpasar, Bali
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

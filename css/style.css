@@ -1,0 +1,2012 @@
+/* =========================================================================
+   PT CANDRA ENTERTAINMENT — COMPANY PROFILE STYLESHEET
+   Tema  : Dark Luxury & Modern Entertainment + Clean Geometric Micro-Pattern
+   Warna : Background Hitam (#0A0A0A), Teks Putih (#FFFFFF), Aksen Gold (#D4A017)
+   Font  : Heading Montserrat (Bold) & Body Inter
+   ========================================================================= */
+
+:root {
+  /* Warna Utama */
+  --bg-primary: #0A0A0A;
+  --bg-elevated: #101010;
+  --bg-card: #151515;
+  --bg-card-hover: #1A1812;
+
+  /* Teks */
+  --text-primary: #FFFFFF;
+  --text-secondary: #CCCCCC;
+  --text-muted: #8E8E8E;
+
+  /* Aksen Kuning / Gold */
+  --gold-primary: #D4A017;
+  --gold-light: #E8B931;
+  --gold-dark: #A67B0E;
+  --gold-border: rgba(212, 160, 23, 0.25);
+  --gold-border-strong: rgba(212, 160, 23, 0.65);
+  --gold-glow: rgba(212, 160, 23, 0.14);
+
+  /* Font */
+  --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Ukuran & Spasi */
+  --container-max: 1220px;
+  --section-padding: 7rem 0;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+
+  /* Transisi Halus */
+  --transition-smooth: all 0.38s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* =========================================================================
+   1. RESET & BASE STYLES (Pattern Micro-Dot Geometris yang Rapi & Presisi)
+   ========================================================================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px;
+}
+
+body {
+  background-color: var(--bg-primary);
+  /* Pattern Micro-Dot Geometris Presisi & Rapi */
+  background-image: radial-gradient(rgba(212, 160, 23, 0.085) 1px, transparent 1px);
+  background-size: 28px 28px;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+/* =========================================================================
+   2. REUSABLE UTILITIES & TYPOGRAPHY
+   ========================================================================= */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1.75rem;
+}
+
+.section {
+  padding: var(--section-padding);
+  position: relative;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-gold {
+  color: var(--gold-primary);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.section-header {
+  max-width: 700px;
+  margin: 0 auto 4.25rem;
+}
+
+.section-eyebrow {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-primary);
+  margin-bottom: 0.85rem;
+}
+
+.section-title {
+  font-size: clamp(1.9rem, 3.5vw, 2.65rem);
+  font-weight: 800;
+  margin-bottom: 1.15rem;
+}
+
+.section-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* Garis Pemisah Gold */
+.gold-divider {
+  width: 68px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold-primary), var(--gold-light), transparent);
+  border-radius: 3px;
+  margin: 1.15rem 0 1.65rem;
+}
+
+.gold-divider--center {
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(90deg, transparent, var(--gold-primary), var(--gold-light), var(--gold-primary), transparent);
+  width: 96px;
+}
+
+/* Tombol */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 0.92rem 1.8rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  border: 1.5px solid transparent;
+}
+
+.btn-primary {
+  background-color: var(--gold-primary);
+  color: #0A0A0A;
+  border-color: var(--gold-primary);
+  box-shadow: 0 8px 24px rgba(212, 160, 23, 0.22);
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  background-color: var(--gold-light);
+  border-color: var(--gold-light);
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(212, 160, 23, 0.35);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--text-primary);
+  border-color: var(--gold-primary);
+}
+
+.btn-outline:hover,
+.btn-outline:focus-visible {
+  background-color: rgba(212, 160, 23, 0.12);
+  color: var(--gold-light);
+  border-color: var(--gold-light);
+  transform: translateY(-3px);
+}
+
+.btn-whatsapp {
+  background-color: rgba(212, 160, 23, 0.12);
+  color: var(--gold-primary);
+  border: 1.5px solid var(--gold-primary);
+  width: 100%;
+  padding: 1rem 1.5rem;
+}
+
+.btn-whatsapp:hover,
+.btn-whatsapp:focus-visible {
+  background-color: var(--gold-primary);
+  color: #0A0A0A;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(212, 160, 23, 0.28);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+/* =========================================================================
+   3. STICKY NAVBAR
+   - Logo vertikal 2 baris (Candra / Entertainment)
+   - Efek Blur, Menciut/Merapat, & Sudut Melengkung saat Scroll
+   - Proporsional, tombol Hubungi Kami tidak mepet ke tepi kapsul
+   ========================================================================= */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 0;
+  transition: padding 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nav-shell {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: rgba(10, 10, 10, 0.86);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid transparent;
+  border-bottom-color: rgba(212, 160, 23, 0.18);
+  border-radius: 0;
+  transition: all 0.42s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nav-container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+  gap: 2rem;
+  transition: all 0.42s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* EFEK SAAT SCROLL DOWN: Menciut/Merapat, Blur Kuat, & Sudut Melengkung Rapi */
+.site-header.scrolled {
+  padding: 0.85rem 1.5rem 0;
+}
+
+.site-header.scrolled .nav-shell {
+  max-width: 1120px;
+  background-color: rgba(14, 14, 14, 0.78);
+  backdrop-filter: blur(22px) saturate(165%);
+  -webkit-backdrop-filter: blur(22px) saturate(165%);
+  border: 1px solid rgba(212, 160, 23, 0.42);
+  border-radius: 999px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.78), 0 0 24px rgba(212, 160, 23, 0.08);
+}
+
+.site-header.scrolled .nav-container {
+  min-height: 64px;
+  padding: 0.45rem 1.15rem 0.45rem 1.85rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.brand-logo-full {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+  transition: var(--transition-smooth);
+}
+
+.site-header.scrolled .brand-logo-full {
+  height: 33px;
+}
+
+.brand:hover .brand-logo-full {
+  transform: scale(1.03);
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  transition: var(--transition-smooth);
+}
+
+.site-header.scrolled .nav-list {
+  gap: 1.55rem;
+}
+
+.nav-link {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  position: relative;
+  padding: 0.35rem 0;
+  white-space: nowrap;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: var(--gold-primary);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--gold-primary);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Tombol Hubungi Kami di Header dengan jarak yang proporsional & tidak mepet */
+.nav-link.nav-cta {
+  margin-left: 0.35rem;
+  padding: 0.58rem 1.35rem;
+  border: 1.5px solid var(--gold-primary);
+  border-radius: 999px;
+  color: var(--gold-primary);
+  background-color: rgba(212, 160, 23, 0.06);
+}
+
+.site-header.scrolled .nav-link.nav-cta {
+  padding: 0.52rem 1.3rem;
+}
+
+.nav-link.nav-cta::after {
+  display: none;
+}
+
+.nav-link.nav-cta:hover,
+.nav-link.nav-cta.active {
+  background-color: var(--gold-primary);
+  color: #0A0A0A;
+  box-shadow: 0 4px 16px rgba(212, 160, 23, 0.3);
+}
+
+/* Hamburger Button */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 42px;
+  height: 42px;
+  background: transparent;
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-sm);
+  padding: 9px;
+  cursor: pointer;
+}
+
+.hamburger-bar {
+  width: 100%;
+  height: 2px;
+  background-color: var(--gold-primary);
+  border-radius: 2px;
+  transition: var(--transition-smooth);
+}
+
+/* =========================================================================
+   4. HERO SECTION (Dengan Pattern Grid Geometris Halus & Presisi)
+   ========================================================================= */
+.hero-section {
+  position: relative;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  padding: 5.5rem 0 5rem;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(212, 160, 23, 0.15);
+}
+
+.hero-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(110px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-glow--top {
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, rgba(212, 160, 23, 0.16) 0%, rgba(10, 10, 10, 0) 70%);
+  top: -140px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-glow--bottom {
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(212, 160, 23, 0.1) 0%, rgba(10, 10, 10, 0) 70%);
+  bottom: -160px;
+  right: -80px;
+}
+
+/* Pattern Grid Geometris Simetris & Rapi di Hero */
+.hero-pattern-overlay {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(212, 160, 23, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(212, 160, 23, 0.045) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 75% 65% at 50% 45%, black 30%, transparent 85%);
+  -webkit-mask-image: radial-gradient(ellipse 75% 65% at 50% 45%, black 30%, transparent 85%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content {
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  padding: 0.45rem 1.2rem;
+  border-radius: 999px;
+  background-color: rgba(212, 160, 23, 0.08);
+  border: 1px solid var(--gold-border);
+  font-family: var(--font-heading);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--gold-primary);
+  margin-bottom: 1.65rem;
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--gold-primary);
+  box-shadow: 0 0 10px var(--gold-primary);
+  flex-shrink: 0;
+}
+
+/* PT Candra Entertainment dibuat sejajar (1 baris pada desktop/tablet) */
+.hero-title {
+  font-size: clamp(1.75rem, 4.1vw, 3.65rem);
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  margin-bottom: 0.9rem;
+}
+
+.hero-title--inline {
+  white-space: nowrap;
+}
+
+.hero-tagline {
+  font-family: var(--font-heading);
+  font-size: clamp(1.25rem, 2.3vw, 1.75rem);
+  font-weight: 600;
+  color: var(--gold-primary);
+  letter-spacing: 0.06em;
+  margin-bottom: 1.4rem;
+}
+
+.hero-description {
+  max-width: 700px;
+  margin: 0 auto 2.35rem;
+  font-size: 1.06rem;
+  color: var(--text-secondary);
+  line-height: 1.85;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.15rem;
+  margin-bottom: 3.75rem;
+}
+
+.hero-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.25rem;
+  padding: 1.65rem 2.25rem;
+  background-color: rgba(18, 18, 18, 0.85);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.stat-value {
+  font-family: var(--font-heading);
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+}
+
+.stat-label {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+.stat-separator {
+  width: 1px;
+  height: 38px;
+  background-color: var(--gold-border);
+}
+
+/* =========================================================================
+   5. TENTANG KAMI SECTION (Embed Video YouTube "Melangkah Maju Bersama")
+   ========================================================================= */
+.about-section {
+  background-color: transparent;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.02fr 1fr;
+  gap: 4.25rem;
+  align-items: center;
+}
+
+.media-frame {
+  position: relative;
+  border-radius: var(--radius-lg);
+  padding: 0.75rem;
+  background: linear-gradient(145deg, rgba(212, 160, 23, 0.3), rgba(21, 21, 21, 0.4));
+  border: 1px solid var(--gold-border-strong);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.7);
+}
+
+.media-frame--video {
+  overflow: hidden;
+  padding: 0.75rem;
+}
+
+.about-video-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: calc(var(--radius-lg) - 8px);
+  overflow: hidden;
+  background-color: #050505;
+  border: 1px solid var(--gold-border);
+}
+
+.about-video-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.about-video-caption {
+  margin-top: 0.75rem;
+  background-color: rgba(17, 17, 17, 0.96);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+  padding: 0.95rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.95rem;
+}
+
+.floating-logo {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.floating-year {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.96rem;
+  font-weight: 800;
+  color: var(--gold-primary);
+  line-height: 1.25;
+}
+
+.floating-caption {
+  display: block;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: var(--text-secondary);
+}
+
+.about-lead {
+  font-size: 1.12rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.about-text {
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+}
+
+.about-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin-top: 1.65rem;
+}
+
+.highlight-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.1rem;
+  padding: 1.2rem 1.35rem;
+  background-color: rgba(21, 21, 21, 0.92);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+  transition: var(--transition-smooth);
+}
+
+.highlight-box:hover {
+  border-color: var(--gold-primary);
+  background-color: var(--bg-card-hover);
+  transform: translateX(4px);
+}
+
+.highlight-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background-color: rgba(212, 160, 23, 0.12);
+  border: 1px solid var(--gold-border);
+  color: var(--gold-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlight-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+  margin-bottom: 0.25rem;
+}
+
+.highlight-desc {
+  font-size: 0.91rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* =========================================================================
+   6. VISI & MISI SECTION (Dua Kartu Berdampingan)
+   ========================================================================= */
+.vm-section {
+  background-color: rgba(16, 16, 16, 0.88);
+  border-top: 1px solid rgba(212, 160, 23, 0.14);
+  border-bottom: 1px solid rgba(212, 160, 23, 0.14);
+}
+
+.vm-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.25rem;
+}
+
+.vm-card {
+  background-color: rgba(21, 21, 21, 0.95);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-lg);
+  padding: 2.75rem 2.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+}
+
+.vm-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold-primary), var(--gold-light), transparent);
+}
+
+.vm-card:hover {
+  border-color: var(--gold-primary);
+  background-color: var(--bg-card-hover);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 25px var(--gold-glow);
+}
+
+.vm-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1.15rem;
+}
+
+.vm-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background-color: rgba(212, 160, 23, 0.12);
+  border: 1px solid var(--gold-primary);
+  color: var(--gold-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.vm-label {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--gold-primary);
+  margin-bottom: 0.2rem;
+}
+
+.vm-title {
+  font-size: 1.55rem;
+  font-weight: 800;
+}
+
+.vm-body {
+  font-size: 1.04rem;
+  color: var(--text-secondary);
+  line-height: 1.85;
+}
+
+.vm-body strong {
+  color: var(--gold-primary);
+}
+
+/* =========================================================================
+   7. DIVISI KAMI SECTION (3 Kartu Utama + Fasilitas Podcast Candra Production)
+   ========================================================================= */
+.division-section {
+  background-color: transparent;
+}
+
+.division-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.division-card {
+  position: relative;
+  background-color: rgba(21, 21, 21, 0.94);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition-smooth);
+}
+
+.division-card:hover {
+  border-color: var(--gold-primary);
+  background-color: var(--bg-card-hover);
+  transform: translateY(-8px);
+  box-shadow: 0 22px 44px rgba(0, 0, 0, 0.65), 0 0 28px var(--gold-glow);
+}
+
+.division-number {
+  position: absolute;
+  top: 1.65rem;
+  right: 1.75rem;
+  font-family: var(--font-heading);
+  font-size: 2.15rem;
+  font-weight: 800;
+  color: rgba(212, 160, 23, 0.15);
+  line-height: 1;
+  transition: var(--transition-smooth);
+}
+
+.division-card:hover .division-number {
+  color: rgba(212, 160, 23, 0.38);
+}
+
+.division-icon {
+  width: 62px;
+  height: 62px;
+  border-radius: 15px;
+  background-color: rgba(212, 160, 23, 0.12);
+  border: 1.5px solid var(--gold-primary);
+  color: var(--gold-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.55rem;
+  transition: var(--transition-smooth);
+}
+
+.division-card:hover .division-icon {
+  background-color: var(--gold-primary);
+  color: #0A0A0A;
+  transform: scale(1.06);
+}
+
+.division-category {
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--gold-primary);
+  margin-bottom: 0.45rem;
+}
+
+.division-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 0.95rem;
+  color: var(--text-primary);
+}
+
+.division-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 1.55rem;
+  flex-grow: 1;
+}
+
+.division-list {
+  border-top: 1px solid rgba(212, 160, 23, 0.18);
+  padding-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.58rem;
+}
+
+.division-list li {
+  font-size: 0.87rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.58rem;
+}
+
+.division-list li::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--gold-primary);
+  flex-shrink: 0;
+}
+
+/* Highlight Fasilitas Candra Production: Studio Podcast */
+.podcast-banner {
+  margin-top: 2.75rem;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 2.75rem;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(22, 20, 14, 0.96) 0%, rgba(18, 18, 18, 0.96) 100%);
+  border: 1.5px solid var(--gold-border-strong);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.65);
+}
+
+.podcast-banner-media {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--gold-border);
+}
+
+.podcast-banner-media img {
+  width: 100%;
+  height: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.podcast-banner:hover .podcast-banner-media img {
+  transform: scale(1.04);
+}
+
+.podcast-banner-title {
+  font-size: clamp(1.45rem, 2.4vw, 1.95rem);
+  font-weight: 800;
+  margin-bottom: 0.85rem;
+}
+
+.podcast-banner-desc {
+  color: var(--text-secondary);
+  font-size: 0.97rem;
+  margin-bottom: 1.55rem;
+}
+
+.podcast-banner-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* =========================================================================
+   8. CANDRA PRO IDOL BALI (Event Rutin Tahunan & Slideshow Foto Instagram)
+   ========================================================================= */
+.idol-section {
+  background-color: rgba(16, 16, 16, 0.88);
+  background-image: radial-gradient(circle at 80% 20%, rgba(212, 160, 23, 0.09), transparent 55%);
+  border-top: 1px solid rgba(212, 160, 23, 0.18);
+  border-bottom: 1px solid rgba(212, 160, 23, 0.18);
+}
+
+.idol-wrapper {
+  display: grid;
+  grid-template-columns: 1.02fr 0.98fr;
+  gap: 3.5rem;
+  align-items: center;
+  background-color: rgba(21, 21, 21, 0.96);
+  border: 1.5px solid var(--gold-border-strong);
+  border-radius: var(--radius-lg);
+  padding: 3.25rem;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7), 0 0 36px rgba(212, 160, 23, 0.08);
+}
+
+.idol-badge {
+  display: inline-block;
+  padding: 0.4rem 0.95rem;
+  border-radius: 999px;
+  background-color: rgba(212, 160, 23, 0.14);
+  border: 1px solid var(--gold-primary);
+  color: var(--gold-primary);
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  margin-bottom: 1.1rem;
+}
+
+.idol-title {
+  font-size: clamp(1.9rem, 3.2vw, 2.6rem);
+  font-weight: 800;
+}
+
+.idol-description {
+  color: var(--text-secondary);
+  margin-bottom: 1.15rem;
+  font-size: 0.98rem;
+}
+
+.idol-pillars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+  margin: 1.65rem 0 2.1rem;
+}
+
+.pillar-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background-color: rgba(10, 10, 10, 0.65);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+  transition: var(--transition-smooth);
+}
+
+.pillar-item:hover {
+  border-color: var(--gold-primary);
+  transform: translateX(4px);
+}
+
+.pillar-num {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #0A0A0A;
+  background-color: var(--gold-primary);
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.pillar-name {
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+  margin-bottom: 0.15rem;
+}
+
+.pillar-text {
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+/* Slideshow Foto Instagram Audisi, Konser & Juara (Bagian Kanan Candra Pro Idol) */
+.idol-slideshow {
+  position: relative;
+  width: 100%;
+}
+
+.slides-viewport {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1.5px solid var(--gold-border-strong);
+  background-color: var(--bg-primary);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.65);
+}
+
+.idol-slide {
+  display: none;
+  animation: slideFade 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.idol-slide.active {
+  display: block;
+}
+
+@keyframes slideFade {
+  from {
+    opacity: 0.25;
+    transform: scale(1.02);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.idol-slide-media {
+  position: relative;
+  width: 100%;
+  background-color: #070707;
+}
+
+.idol-slide-img {
+  width: 100%;
+  aspect-ratio: 4 / 3.4;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.slide-ig-pill {
+  position: absolute;
+  top: 0.95rem;
+  right: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.42rem 0.9rem;
+  border-radius: 999px;
+  background-color: rgba(10, 10, 10, 0.82);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--gold-primary);
+  color: var(--gold-primary);
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  font-weight: 700;
+  z-index: 4;
+}
+
+.slide-ig-pill:hover {
+  background-color: var(--gold-primary);
+  color: #0A0A0A;
+}
+
+.idol-slide-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.35rem;
+  background-color: #0E0E0E;
+  border-top: 1px solid var(--gold-border);
+}
+
+.slide-badge {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--gold-primary);
+  margin-bottom: 0.15rem;
+}
+
+.slide-title {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.slide-count {
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+  background-color: rgba(212, 160, 23, 0.12);
+  border: 1px solid var(--gold-border);
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.slide-count:hover {
+  background-color: var(--gold-primary);
+  color: #0A0A0A;
+}
+
+/* Tombol Prev & Next Slideshow */
+.slide-nav {
+  position: absolute;
+  top: 42%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: rgba(10, 10, 10, 0.8);
+  border: 1.5px solid var(--gold-primary);
+  color: var(--gold-primary);
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  z-index: 5;
+}
+
+.slide-nav:hover,
+.slide-nav:focus-visible {
+  background-color: var(--gold-primary);
+  color: #0A0A0A;
+  transform: translateY(-50%) scale(1.08);
+}
+
+.slide-nav--prev {
+  left: 1rem;
+}
+
+.slide-nav--next {
+  right: 1rem;
+}
+
+/* Indikator Dots Slideshow */
+.slide-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  margin-top: 1.1rem;
+}
+
+.slide-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background-color: rgba(212, 160, 23, 0.28);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.slide-dot:hover {
+  background-color: rgba(212, 160, 23, 0.6);
+}
+
+.slide-dot.active {
+  width: 30px;
+  background-color: var(--gold-primary);
+}
+
+/* =========================================================================
+   9. GALERI KARYA (YouTube Embed Grid & Social Strip)
+   ========================================================================= */
+.gallery-section {
+  background-color: transparent;
+}
+
+.gallery-filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2.75rem;
+}
+
+.filter-btn {
+  font-family: var(--font-heading);
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background-color: var(--bg-card);
+  border: 1px solid var(--gold-border);
+  padding: 0.6rem 1.35rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: var(--gold-primary);
+  color: #0A0A0A;
+  border-color: var(--gold-primary);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.85rem;
+}
+
+.gallery-item.is-hidden {
+  display: none;
+}
+
+.video-card {
+  background-color: rgba(21, 21, 21, 0.94);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition-smooth);
+}
+
+.video-card:hover {
+  border-color: var(--gold-primary);
+  background-color: var(--bg-card-hover);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), 0 0 24px var(--gold-glow);
+}
+
+.video-embed-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #050505;
+  border-bottom: 1px solid var(--gold-border);
+}
+
+.video-embed-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-card-body {
+  padding: 1.4rem 1.5rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.gallery-tag {
+  display: inline-block;
+  align-self: flex-start;
+  font-family: var(--font-heading);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #0A0A0A;
+  background-color: var(--gold-primary);
+  padding: 0.22rem 0.68rem;
+  border-radius: 4px;
+  margin-bottom: 0.65rem;
+}
+
+.video-card-title {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.45rem;
+}
+
+.video-card-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Strip Kanal YouTube, Instagram & Facebook */
+.social-embed-strip {
+  margin-top: 3.25rem;
+  padding: 2.25rem 2.5rem;
+  background: linear-gradient(135deg, rgba(22, 19, 11, 0.96) 0%, rgba(18, 18, 18, 0.96) 100%);
+  border: 1px solid var(--gold-border-strong);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+}
+
+.social-strip-info {
+  max-width: 540px;
+}
+
+.social-strip-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+}
+
+.social-strip-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+.social-strip-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+/* =========================================================================
+   10. KONTAK SECTION
+   ========================================================================= */
+.contact-section {
+  background-color: rgba(16, 16, 16, 0.88);
+  border-top: 1px solid rgba(212, 160, 23, 0.15);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 0.98fr 1.02fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.contact-heading {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--gold-primary);
+  margin-bottom: 0.75rem;
+}
+
+.contact-intro {
+  color: var(--text-secondary);
+  margin-bottom: 1.85rem;
+}
+
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  margin-bottom: 1.75rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.15rem;
+  padding: 1.25rem 1.4rem;
+  background-color: rgba(21, 21, 21, 0.94);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+  transition: var(--transition-smooth);
+}
+
+.info-item:hover {
+  border-color: var(--gold-primary);
+  background-color: var(--bg-card-hover);
+}
+
+.info-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background-color: rgba(212, 160, 23, 0.12);
+  border: 1px solid var(--gold-primary);
+  color: var(--gold-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.info-title {
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.2rem;
+}
+
+.info-detail {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.35rem;
+}
+
+.info-sublinks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-link {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--gold-primary);
+}
+
+.info-link:hover {
+  color: var(--gold-light);
+  text-decoration: underline;
+}
+
+.whatsapp-box {
+  padding: 1.4rem 1.5rem;
+  background-color: rgba(21, 21, 21, 0.94);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+}
+
+.whatsapp-note {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.85rem;
+}
+
+/* Contact Form */
+.contact-form-wrapper {
+  background-color: rgba(21, 21, 21, 0.96);
+  border: 1px solid var(--gold-border-strong);
+  border-radius: var(--radius-lg);
+  padding: 2.75rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+}
+
+.form-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--gold-primary);
+  margin-bottom: 0.4rem;
+}
+
+.form-subtitle {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.85rem;
+}
+
+.form-group {
+  margin-bottom: 1.35rem;
+}
+
+.form-label {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  width: 100%;
+  background-color: #0E0E0E;
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-sm);
+  padding: 0.9rem 1.1rem;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  transition: var(--transition-smooth);
+}
+
+.form-control::placeholder {
+  color: #666666;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 0 3px rgba(212, 160, 23, 0.18);
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-feedback {
+  margin-top: 1.15rem;
+  font-size: 0.9rem;
+  border-radius: var(--radius-sm);
+  display: none;
+}
+
+.form-feedback.show {
+  display: block;
+  padding: 0.9rem 1.1rem;
+}
+
+.form-feedback.success {
+  background-color: rgba(212, 160, 23, 0.14);
+  border: 1px solid var(--gold-primary);
+  color: var(--gold-light);
+}
+
+.form-feedback.error {
+  background-color: rgba(220, 53, 69, 0.15);
+  border: 1px solid rgba(220, 53, 69, 0.5);
+  color: #ff8b94;
+}
+
+/* =========================================================================
+   11. FOOTER
+   ========================================================================= */
+.site-footer {
+  background-color: #060606;
+  border-top: 1px solid var(--gold-border);
+  padding: 4.5rem 0 2.25rem;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.45fr 0.8fr 0.85fr 1.15fr;
+  gap: 2.5rem;
+  padding-bottom: 3.25rem;
+  border-bottom: 1px solid rgba(212, 160, 23, 0.16);
+}
+
+.footer-logos {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.footer-ce-logo {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-pro-logo {
+  height: 46px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-desc {
+  color: var(--text-secondary);
+  font-size: 0.91rem;
+  margin: 1.15rem 0 0.65rem;
+  max-width: 360px;
+}
+
+.footer-address {
+  font-size: 0.86rem;
+  color: var(--gold-primary);
+  margin-bottom: 0.3rem;
+}
+
+.footer-contact-line {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.footer-contact-line a:hover {
+  color: var(--gold-primary);
+}
+
+.footer-heading {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-primary);
+  margin-bottom: 1.25rem;
+}
+
+.footer-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.footer-links a {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+.footer-links a:hover {
+  color: var(--gold-primary);
+  padding-left: 4px;
+}
+
+.footer-social-text {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.15rem;
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.social-link:hover {
+  background-color: var(--gold-primary);
+  border-color: var(--gold-primary);
+  color: #0A0A0A;
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.footer-bottom strong {
+  color: var(--gold-primary);
+}
+
+.footer-tagline {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+/* =========================================================================
+   12. ANIMASI SCROLL HALUS (Fade-In on Scroll)
+   ========================================================================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* =========================================================================
+   13. RESPONSIVE BREAKPOINTS (Tablet & Mobile — Optimalisasi Hero Mobile)
+   ========================================================================= */
+@media (max-width: 1024px) {
+  :root {
+    --section-padding: 5.5rem 0;
+  }
+
+  .about-grid,
+  .idol-wrapper,
+  .contact-grid,
+  .podcast-banner {
+    grid-template-columns: 1fr;
+    gap: 2.75rem;
+  }
+
+  .division-grid,
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 860px) {
+  /* Mobile Navigation & Scrolled Pill Adjustment */
+  .nav-container {
+    min-height: 68px;
+    padding: 0 1.25rem;
+  }
+
+  .brand-logo-full {
+    height: 32px;
+  }
+
+  .site-header.scrolled {
+    padding: 0.55rem 0.85rem 0;
+  }
+
+  .site-header.scrolled .nav-shell {
+    border-radius: 999px;
+  }
+
+  .site-header.scrolled .nav-container {
+    min-height: 56px;
+    padding: 0.35rem 0.85rem 0.35rem 1.25rem;
+  }
+
+  .site-header.scrolled .brand-logo-full {
+    height: 28px;
+  }
+
+  .nav-toggle {
+    display: flex;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    padding: 8px 9px;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0.85rem;
+    right: 0.85rem;
+    background-color: rgba(14, 14, 14, 0.97);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+    border: 1px solid var(--gold-border-strong);
+    border-radius: 18px;
+    padding: 1.35rem 1.5rem 1.6rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: var(--transition-smooth);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.85);
+  }
+
+  .nav-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.85rem;
+  }
+
+  .nav-link {
+    padding: 0.45rem 0.25rem;
+    font-size: 0.92rem;
+  }
+
+  .nav-link.nav-cta {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 0.45rem;
+    padding: 0.75rem 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 4.25rem 0;
+  }
+
+  .container {
+    padding: 0 1.2rem;
+  }
+
+  /* =====================================================================
+     OPTIMALISASI KHUSUS HERO SECTION PADA MOBILE
+     Proporsional, muat nyaman di layar ponsel, tombol ramah jempol,
+     dan statistik ringkas 3 kolom berdampingan.
+     ===================================================================== */
+  .hero-section {
+    min-height: auto;
+    padding: 2.5rem 0 3rem;
+  }
+
+  .hero-pattern-overlay {
+    background-size: 38px 38px;
+  }
+
+  .hero-badge {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.63rem;
+    letter-spacing: 0.08em;
+    margin-bottom: 1.15rem;
+    max-width: 100%;
+    line-height: 1.35;
+  }
+
+  .badge-dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .hero-title {
+    font-size: clamp(1.65rem, 6.8vw, 2.25rem);
+    line-height: 1.2;
+    margin-bottom: 0.55rem;
+  }
+
+  .hero-title--inline {
+    white-space: nowrap;
+  }
+
+  .hero-tagline {
+    font-size: clamp(1.05rem, 4.3vw, 1.3rem);
+    margin-bottom: 0.85rem;
+  }
+
+  .hero-section .gold-divider--center {
+    margin: 0.75rem auto 1.1rem;
+    width: 72px;
+  }
+
+  .hero-description {
+    font-size: 0.92rem;
+    line-height: 1.68;
+    margin-bottom: 1.6rem;
+    padding: 0 0.15rem;
+  }
+
+  /* Tombol CTA Hero berdampingan & nyaman disentuh di Mobile */
+  .hero-actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    max-width: 400px;
+    margin: 0 auto 2rem;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    padding: 0.82rem 0.9rem;
+    font-size: 0.84rem;
+    border-radius: 10px;
+  }
+
+  /* Statistik Hero Ringkas 3 Kolom di Mobile (Tidak memanjang ke bawah) */
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.35rem;
+    padding: 1rem 0.6rem;
+    border-radius: 14px;
+    background-color: rgba(18, 18, 18, 0.92);
+  }
+
+  .stat-separator {
+    display: none;
+  }
+
+  .stat-item {
+    padding: 0 0.35rem;
+    border-right: 1px solid rgba(212, 160, 23, 0.18);
+  }
+
+  .stat-item:last-child {
+    border-right: none;
+  }
+
+  .stat-value {
+    font-size: 0.8rem;
+    line-height: 1.25;
+  }
+
+  .stat-label {
+    font-size: 0.67rem;
+    line-height: 1.3;
+  }
+
+  /* Grids Section Lainnya */
+  .vm-grid,
+  .division-grid,
+  .gallery-grid,
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  .vm-card,
+  .division-card,
+  .contact-form-wrapper,
+  .podcast-banner {
+    padding: 1.85rem 1.4rem;
+  }
+
+  .idol-wrapper {
+    padding: 1.85rem 1.35rem;
+  }
+
+  .social-embed-strip {
+    padding: 1.65rem 1.4rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Layar Mobile Sangat Kecil (<= 380px) */
+@media (max-width: 380px) {
+  .hero-title--inline {
+    white-space: normal;
+  }
+
+  .hero-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+    padding: 1.1rem;
+  }
+
+  .stat-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(212, 160, 23, 0.15);
+    padding-bottom: 0.65rem;
+  }
+
+  .stat-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
