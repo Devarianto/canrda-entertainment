@@ -907,9 +907,15 @@ ul {
   flex-shrink: 0;
 }
 
-/* Highlight Fasilitas Candra Production: Studio Podcast */
-.podcast-banner {
+/* Highlight Fasilitas Candra Production: Studio Rekaman & Studio Podcast */
+.studio-facilities-list {
   margin-top: 2.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.podcast-banner {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
   gap: 2.75rem;
