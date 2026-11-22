@@ -24,8 +24,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.getElementById('navMenu');
   const navLinks = document.querySelectorAll('.nav-link');
 
+  const getScrollY = () =>
+    window.scrollY ||
+    window.pageYOffset ||
+    document.documentElement.scrollTop ||
+    document.body.scrollTop ||
+    0;
+
   const handleHeaderScroll = () => {
-    if (window.scrollY > 30) {
+    if (getScrollY() > 30) {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
